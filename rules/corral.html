@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Corral - Rules</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <p id="back"><a href="../index.html">Back to index page</a></p>
+    <h1>Corral</h1>
+    <p>Also known as <strong>Bag</strong> and <strong>Cave</strong>.</p>
+    
+    <div class="rulebox">
+        <div class="rules">
+            <p>Shade some cells black. All white cells must form a single connected group. Each group of black cells must be connected to the edge of the grid. Numbers may not be shaded. Each number represents the number of white cells "seen" from it, where line of sight goes from the number in the four cardinal directions until reaching a black square or the edge of the grid; each number counts its own cell.</p>
+            <p class="explanation">Here, the cell in R1C4 sees 4 cells: R1C4 itself, R1C5 and R1C6 to the right, and R2C4 below. R1C1 and R1C2 are blocked by the black cell on R1C3, and R4C4 and R5C4 are blocked by the black cell on R3C4. If R3C3 was white, the solution wouldn't be valid because the 7 in R3C1 would see 8 white cells; even if R1C1 was turned black to make the 7 see 7 white cells, the solution wouldn't still be valid since R4C3 wouldn't be connected to the edge.</p>
+        </div>
+        <div class="ex"><img src="images/corral.png"></div>
+        <div class="exsol"><img src="images/corral-sol.png"></div>
+    </div>
+    
+</body>
+
+</html>
